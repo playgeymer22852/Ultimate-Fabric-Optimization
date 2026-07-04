@@ -29,7 +29,7 @@
 Вы можете установить сборку двумя официальными способами — через платформу Modrinth со страницы автора или напрямую скачивая файлы версий с этого GitHub.
 
 #### 🟢 Способ 1. Скачивание через Modrinth
-* Перейдите по прямой ссылке на страницу проекта: **<a href="https://modrinth.com" target="_blank"><span style="color: #1bd96a;">ОФИЦИАЛЬНАЯ СТРАНИЦА НА MODRINTH</span></a>**.
+* Перейдите по прямой ссылке на страницу проекта: **[ОФИЦИАЛЬНАЯ СТРАНИЦА НА MODRINTH](https://modrinth.com)**. 
 * Если вы используете лаунчер **Modrinth App**, **Prism Launcher** или **MultiMC**: просто введите в поиске `Ultimate Optimization` и нажмите «Установить». Лаунчер сам всё настроит.
 
 #### 🔵 Способ 2. Скачивание готовых файлов на GitHub
@@ -106,7 +106,7 @@ A technical modpack designed to achieve maximum performance, perfect frame smoot
 You can install the modpack in two official ways — via the author's official Modrinth page or by directly downloading release files from this GitHub.
 
 #### 🟢 Method 1. Download via Modrinth
-* Click this direct link to the project page: **<a href="https://modrinth.com" target="_blank"><span style="color: #1bd96a;">OFFICIAL MODRINTH PAGE</span></a>**.
+* Click this direct link to the project page: **[OFFICIAL MODRINTH PAGE](https://modrinth.com)**.
 * If you are using **Modrinth App**, **Prism Launcher**, or **MultiMC**: simply search for `Ultimate Optimization` inside the launcher and click "Install". The launcher will handle everything automatically.
 
 #### 🔵 Method 2. Download via GitHub Releases
