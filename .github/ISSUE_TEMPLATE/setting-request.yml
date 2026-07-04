@@ -1,45 +1,44 @@
-name: Setting change
-description: Suggest an option/config/keybind/etc change in an existing mod or tool. Use this also for suggestions about Mod Menu Helper, Chat Reporting Helper or Fast Better Grass.
-labels: option
+name: "⚙️ Изменение настроек / Setting change"
+description: "Предложить изменить стандартные настройки, конфиги или горячие клавиши в сборке."
+labels: ["option"]
 body:
-- type: markdown
-  attributes:
-    value: |
-      Before you request a config change, [please search](https://github.com/Madis0/fabulously-optimized/issues) if it has already been requested and see [if it has already been changed](https://wiki.download.fo/changed-options#options). 
-      If it has been changed and you don't see it, [make sure you are on the latest version](https://download.fo/update) and [reset your settings](https://wiki.download.fo/update-instructions#resetting-options).
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔧 Запрос на изменение конфигурации сборки
+        Перед тем как предложить изменить какую-либо настройку по умолчанию, пожалуйста, [убедитесь через поиск](https://github.com), что аналогичное предложение не обсуждалось ранее. 
+        Убедитесь, что вы используете самую последнюю версию нашего модпака.
 
-- type: textarea
-  attributes:
-    label: What config to change
-    description: Describe the change you want to suggest in the configuration of the modpack.
-  validations:
-    required: true
+  - type: textarea
+    id: what_to_change
+    attributes:
+      label: "🔧 Какую настройку вы предлагаете изменить?"
+      description: "Подробно опишите, какой параметр, клавишу или конфигурационный файл какого мода стоит скорректировать."
+      placeholder: "Например: Изменить стандартную клавишу Zoomify (Приближение) с 'V' на 'C'..."
+    validations:
+      required: true
 
-- type: textarea
-  attributes:
-    label: Why should it be changed
-    description: How can the change benefit everyone while keeping the experience "vanilla-like"?
-  validations:
-    required: true
+  - type: textarea
+    id: why_change
+    attributes:
+      label: "❓ Почему это нужно изменить?"
+      description: "Какую конкретную пользу это принесет всем игрокам, сохраняя при этом классический ванильный баланс игры?"
+      placeholder: "Например: Клавиша 'V' часто конфликтует со стандартным голосовым чатом на многих популярных серверах..."
+    validations:
+      required: true
     
-- type: textarea
-  attributes:
-    label: Additional details
-    description: Anything else you want to add?
-  validations:
-    required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: "📌 Дополнительные детали"
+      description: "Всё, что вы хотите добавить от себя (необязательно)."
+    validations:
+      required: false
 
-- type: input
-  attributes:
-    label: Discord discussion link
-    description: Was this also discussed on the Fabulously Optimized Discord (optional)? If so, copy the link here.
-    placeholder: https://discord.com/channels/859124104644788234/...
-  validations:
-    required: false
-
-- type: checkboxes
-  attributes:
-    label: Confirm
-    options:
-      - label: This is a request to change the configuration of the modpack, whether by adjusting vanilla settings, mod settings, instance structure or something else. This is not a request for new features that do not already exist in added mods.
-        required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "🛡️ Подтверждение соглашения"
+      options:
+        - label: "Это запрос строго на изменение стандартной конфигурации модпака (ванильных параметров или файлов модов). Это не запрос на добавление совершенно новых функций или модов, которых сейчас нет в сборке."
+          required: true
