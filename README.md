@@ -17,19 +17,19 @@
 
 > ℹ️ **ОФИЦИАЛЬНЫЙ РЕЛИЗ ПРОЕКТА**
 > 
-> Настоящая, безопасная и чистая версия сборки Ultimate Optimization официально существует **ИСКЛЮЧИТЕЛЬНО** на двух платформах:
+> Настоящая, безопасная и чистая версия сборки Ultimate Optimization официально публикуется и поддерживается **ИСКЛЮЧИТЕЛЬНО** на двух платформах:
 > 
-> 1. **Платформа Modrinth** (Официальная страница автора `playgeymer22852` для скачивания и автообновлений)
-> 2. **Платформа GitHub** (Это официальный репозиторий для техподдержки и скачивания готовых версий)
+> 1. **Платформа Modrinth** — размещена на официальном аккаунте создателя (`playgeymer22852`) для безопасного скачивания и получения автоматических обнаружений.
+> 2. **Платформа GitHub** — официальный репозиторий проекта для технической поддержки, сообщения о багах и загрузки стабильных версий.
 
 ⚠️ **БОЛЬШЕ НИГДЕ ДАННОЙ СБОРКИ НЕТ!** Если вы увидите этот модпак на стороннем сайте, в левом лаунчере или на CurseForge — это подделка (фейк). Скачивайте файлы только из официальных источников!
 
 ### 📥 Инструкция: Как скачать сборку
 
-Вы можете установить сборку двумя официальными способами — через платформу Modrinth или напрямую скачивая файлы версий с этого GitHub.
+Вы можете установить сборку двумя официальными способами — через платформу Modrinth со страницы автора или напрямую скачивая файлы версий с этого GitHub.
 
 #### 🟢 Способ 1. Скачивание через Modrinth
-* Нажмите на эту прямую ссылку: **[ОТКРЫТЬ СТРАНИЦУ НА MODRINTH](https://modrinth.com)**. 
+* Перейдите по прямой ссылке на страницу проекта: **[ОФИЦИАЛЬНАЯ СТРАНИЦА НА MODRINTH](https://modrinth.com)**. 
 * Если вы используете лаунчер **Modrinth App**, **Prism Launcher** или **MultiMC**: просто введите в поиске `Ultimate Optimization` и нажмите «Установить». Лаунчер сам всё настроит.
 
 #### 🔵 Способ 2. Скачивание готовых файлов на GitHub
@@ -94,19 +94,19 @@ A technical modpack designed to achieve maximum performance, perfect frame smoot
 
 > ℹ️ **OFFICIAL PROJECT RELEASE**
 > 
-> The authentic, safe, and clean version of the Ultimate Optimization modpack officially exists **EXCLUSIVELY** on two platforms:
+> The authentic, safe, and clean version of the Ultimate Optimization modpack officially exists and is maintained **EXCLUSIVELY** on two platforms:
 > 
-> 1. **Modrinth Platform** (Official page of the author `playgeymer22852` for downloads and automatic updates)
-> 2. **GitHub Platform** (This is the official repository for technical support and downloading stable releases)
+> 1. **Modrinth Platform** — hosted on the creator's official author account (`playgeymer22852`) for secure downloads and automatic updates.
+> 2. **GitHub Platform** — the official repository for project support, bug reporting, and downloading stable releases.
 
 ⚠️ **THIS MODPACK IS NOT AVAILABLE ANYWHERE ELSE!** If you see this modpack on any other website, a third-party launcher, or CurseForge — it is a fake. Download files only from official sources!
 
 ### 📥 How to Download
 
-You can install the modpack in two official ways — via the Modrinth platform or by directly downloading release files from this GitHub.
+You can install the modpack in two official ways — via the author's official Modrinth page or by directly downloading release files from this GitHub.
 
 #### 🟢 Method 1. Download via Modrinth
-* Click this direct link: **[OPEN MODRINTH PAGE](https://modrinth.com)**.
+* Click this direct link to the project page: **[OFFICIAL MODRINTH PAGE](https://modrinth.com)**.
 * If you are using **Modrinth App**, **Prism Launcher**, or **MultiMC**: simply search for `Ultimate Optimization` inside the launcher and click "Install". The launcher will handle everything automatically.
 
 #### 🔵 Method 2. Download via GitHub Releases
