@@ -11,7 +11,6 @@ body:
     id: meta_info
     attributes:
       label: "Технические подробности задачи / Details"
-      description: "Опишите крупные изменения в сборке, рефакторинг структуры или глобальные тесты производительности."
       placeholder: "Перевод сборки на новую версию Minecraft 1.21.x и глобальное тестирование стабильности FPS..."
     validations:
       required: true
