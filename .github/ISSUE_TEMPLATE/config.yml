@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 
 options:
-  - name: "meta-issue"
+  - name: "📁 Техническая задача / Meta issue"
     visible-to: ["collaborators"]
