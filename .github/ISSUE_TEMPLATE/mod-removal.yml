@@ -49,6 +49,13 @@ body:
       placeholder: "Укажите параметры вашего ПК (Видеокарта, Процессор, SSD/HDD, RAM) и ваши замеры кадров в секунду (FPS) с этим модом и без него..."
     validations:
       required: true
+  - type: input
+    id: optional_link
+    attributes:
+      label: "6. Ссылка на сайт мода (Опционально) / Mod Link (Any site)"
+      placeholder: "https://... (Например, ссылка на страницу автора с описанием известного бага)"
+    validations:
+      required: false
   - type: checkboxes
     id: user_agreement_removal
     attributes:
