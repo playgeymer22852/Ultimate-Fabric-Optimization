@@ -1,17 +1,17 @@
 name: "📁 Техническая задача / Meta issue"
-description: "Используйте этот тип задач только по прямой просьбе создателя сборки"
+description: "Внутренний шаблон для создателя сборки и модераторов"
 title: "[Meta]: "
 labels: ["meta"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### 📁 Внутренняя техническая задача проекта Ultimate Optimization
+        ### 📁 Внутренняя техническая задача проекта Ultimate Optimization (Доступ ограничен)
   - type: textarea
     id: meta_info
     attributes:
-      label: "Технические подробности крупной девелоперской задачи / Details"
-      placeholder: "Глобальный перевод сборки на новую версию Minecraft 1.21.x и масштабные тесты стабильности FPS на разных видеокартах..."
+      label: "Технические подробности девелоперской задачи / Details"
+      placeholder: "Перевод сборки на новую версию Minecraft 1.21.x и глобальное тестирование стабильности FPS..."
     validations:
       required: true
   - type: checkboxes
