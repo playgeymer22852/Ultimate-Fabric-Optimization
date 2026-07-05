@@ -1,31 +1,59 @@
-name: "Bug report"
-description: "Report an issue with the modpack in its unmodified state."
+name: "🐛 Сообщение об ошибке / Bug report"
+description: "Сообщите о вылете, баге в Ultimate Optimization или проблемах с FPS"
 title: "[BUG]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### 📌 Bug report for Ultimate Optimization
+        ### 📌 Технический отчет об ошибке для Ultimate Optimization / Bug report form
+        Пожалуйста, укажите параметры вашего ПК и лаунчера. Это критически важно для решения проблем с FPS и вылетами!
   - type: textarea
     id: description
     attributes:
-      label: "Description"
-      description: "What happened?"
-      placeholder: "The game crashes when opening..."
+      label: "Описание проблемы / Description"
+      placeholder: "Игра вылетает при генерации мира / резко падает FPS до 10 кадров..."
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: "Modpack Version"
-      placeholder: "e.g. v1.0.0"
+      label: "Версия сборки и Minecraft / Modpack & MC Version"
+      placeholder: "v1.0.0 (Minecraft 1.21)"
+    validations:
+      required: true
+  - type: input
+    id: launcher
+    attributes:
+      label: "Лаунчер / Minecraft Launcher"
+      placeholder: "Modrinth App, Prism Launcher, TL Launcher..."
+    validations:
+      required: true
+  - type: input
+    id: java_version
+    attributes:
+      label: "Версия Java / Java Version"
+      placeholder: "Java 17, Java 21 (GraalVM, Temurin...)"
+    validations:
+      required: true
+  - type: input
+    id: specs
+    attributes:
+      label: "Процессор и Видеокарта / PC Specs"
+      placeholder: "Intel Core i5-12400F / NVIDIA RTX 3060"
+    validations:
+      required: true
+  - type: input
+    id: ram
+    attributes:
+      label: "Выделенная оперативная память и частота / Allocated RAM"
+      placeholder: "Выделено 4 ГБ (всего на ПК 16 ГБ, частота 3200 МГц)"
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
-      label: "Logs or Crash Report"
-      description: "Please provide latest.log or crash report"
+      label: "Логи ошибки (latest.log или краш-репорт) / Logs & Crash Report"
+      description: "Без логов мы не сможем найти причину сбоя в оптимизации!"
     validations:
       required: true
