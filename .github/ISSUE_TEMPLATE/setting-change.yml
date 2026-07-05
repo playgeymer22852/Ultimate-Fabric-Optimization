@@ -10,14 +10,32 @@ body:
   - type: textarea
     id: change_info
     attributes:
-      label: "Какие настройки нужно изменить по умолчанию и почему? / Details"
+      label: "1. Какие настройки нужно изменить по умолчанию и почему? / Details"
       placeholder: "Отключите мягкое освещение в Sodium по умолчанию, так как это дает +15 FPS на старых видеокартах..."
     validations:
       required: true
   - type: input
     id: pc_impact
     attributes:
-      label: "На каком железе это проверялось? / PC Specs used for testing"
-      placeholder: "e.g. Ноутбук с процессором AMD Ryzen 3 и встроенной графикой Vega..."
+      label: "2. На каком железе и разрешении экрана это проверялось? / PC Specs & Resolution used for testing"
+      placeholder: "e.g. Ноутбук AMD Ryzen 3, разрешение экрана 1920x1080..."
     validations:
       required: true
+  - type: dropdown
+    id: config_os
+    attributes:
+      label: "3. На какой операционной системе проверялись новые настройки? / Operating System used"
+      options:
+        - "🪟 Windows 10 / 11"
+        - "🐧 Linux"
+        - "🍏 MacOS"
+        - "📱 PojavLauncher"
+    validations:
+      required: true
+  - type: checkboxes
+    id: user_agreement_config
+    attributes:
+      label: "⚖️ Пользовательское соглашение / User Agreement"
+      options:
+        - label: "Я гарантирую, что предложенное изменение настроек действительно повышает общую производительность (FPS) или исправляет конфликты управления, и я тестировал это лично на официальной сборке / I agree to the terms"
+          required: true
