@@ -8,28 +8,29 @@ body:
       value: |
         ### ⚙️ Изменение конфигурации Ultimate Optimization / Config changes
   - type: textarea
-    id: change_info
+    id: change_what
     attributes:
-      label: "1. Какие настройки нужно изменить по умолчанию и почему? / Details"
-      placeholder: "Отключите мягкое освещение в Sodium по умолчанию, так как это дает +15 FPS на старых видеокартах..."
+      label: "1. Какие настройки нужно изменить по умолчанию? / What configuration should be changed?"
+      placeholder: "Отключить мягкое освещение в настройках графики, изменить дистанцию симуляции на 6 чанков..."
     validations:
       required: true
-  - type: input
-    id: pc_impact
+  - type: textarea
+    id: change_why
     attributes:
-      label: "2. На каком железе и разрешении экрана это проверялось? / PC Specs & Resolution used for testing"
-      placeholder: "e.g. Ноутбук AMD Ryzen 3, разрешение экрана 1920x1080..."
+      label: "2. Почему? / Why?"
+      placeholder: "Потому что это дает огромный прирост производительности (+15-20 FPS) на старых видеокартах и Xeon-системах..."
     validations:
       required: true
   - type: dropdown
     id: config_os
     attributes:
-      label: "3. На какой операционной системе проверялись новые настройки? / Operating System used"
+      label: "3. Операционная система / Operating System"
       options:
         - "🪟 Windows 10 / 11"
         - "🐧 Linux"
         - "🍏 MacOS"
         - "📱 PojavLauncher"
+        - "❓ Другая ОС"
     validations:
       required: true
   - type: checkboxes
@@ -37,5 +38,5 @@ body:
     attributes:
       label: "⚖️ Пользовательское соглашение / User Agreement"
       options:
-        - label: "Я гарантирую, что предложенное изменение настроек действительно повышает общую производительность (FPS) или исправляет конфликты управления, и я тестировал это лично на официальной сборке / I agree to the terms"
+        - label: "Я гарантирую, что предложенное изменение настроек действительно повышает общую производительность (FPS) или исправляет конфликты управления / I agree to the terms"
           required: true
