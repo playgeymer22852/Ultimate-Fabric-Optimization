@@ -27,9 +27,31 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: java_version_exact
+    attributes:
+      label: "3. Какую версию Java вы используете для запуска игры? / Exact Java Version"
+      options:
+        - "☕ Java 25 (Рекомендуемая для сборки)"
+        - "☕ Java 21 / Java 17"
+        - "☕ Устаревшая Java 8"
+        - "❓ Другая версия / Встроенная в лаунчер"
+    validations:
+      required: true
+  - type: dropdown
+    id: java_garbage_collector
+    attributes:
+      label: "4. Какой мусорщик (Garbage Collector) включен в лаунчере? / Java GC Type"
+      options:
+        - "⚡ Стандартный G1GC (По умолчанию в большинстве лаунчеров)"
+        - "🚀 ZGC (Z Garbage Collector)"
+        - "🍃 Shenandoah GC"
+        - "🔒 Использую чистые стандартные настройки лаунчера / Не знаю"
+    validations:
+      required: true
+  - type: dropdown
     id: ram_os
     attributes:
-      label: "3. Операционная система / Operating System"
+      label: "5. Операционная система / Operating System"
       options:
         - "🪟 Windows 10 / 11"
         - "🐧 Linux"
@@ -41,22 +63,29 @@ body:
   - type: textarea
     id: ram_description
     attributes:
-      label: "4. Подробное описание проблемы / Description"
+      label: "6. Подробное описание проблемы / Description"
       placeholder: "Через полтора часа игры Майнкрафт начинает сильно лагать, в меню F3 использование памяти доходит до 99%..."
     validations:
       required: true
   - type: textarea
     id: ram_specs
     attributes:
-      label: "5. Полные характеристики вашего ПК (Процессор, Видеокарта, тип диска) / Your Specs"
+      label: "7. Полные характеристики вашего ПК (Процессор, Видеокарта, тип диска) / Your Specs"
       placeholder: "Intel Xeon E5-2670 | GTX 1060 | Сборка стоит на SSD..."
     validations:
       required: true
   - type: textarea
     id: ram_arguments
     attributes:
-      label: "6. Особые аргументы Java в лаунчере (Если меняли) / Custom Java Arguments"
-      placeholder: "Если вы сами прописывали аргументы мусорщика (ZGC, Shenandoah, G1GC), скопируйте их сюда..."
+      label: "8. Особые аргументы Java в лаунчере (Если меняли) / Custom Java Arguments"
+      placeholder: "Если вы сами прописывали кастомные флаги оптимизации памяти, скопируйте их сюда..."
+    validations:
+      required: false
+  - type: textarea
+    id: ram_logs
+    attributes:
+      label: "9. Логи или краш-репорт (Опционально, но желательно) / Logs & Crash Report"
+      description: "Если игра полностью вылетает или намертво зависает, пожалуйста, перетащите сюда файл latest.log или crash-report."
     validations:
       required: false
   - type: checkboxes
@@ -64,5 +93,5 @@ body:
     attributes:
       label: "⚖️ Пользовательское соглашение / User Agreement"
       options:
-        - label: "Я подтверждаю, что выделил Майнкрафту не менее 3-4 ГБ памяти и закрыл тяжелые сторонние программы (браузеры) перед тестом / I agree to the terms"
+        - label: "Я подтверждаю, что выделил Майнкрафту не менее 3-4 ГБ памяти и закрыл тяжелые сторонние программы перед тестом / I agree to the terms"
           required: true
