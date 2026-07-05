@@ -1,4 +1,4 @@
-name: "📁 Техническая задача / Meta issue"
+name: "Meta issue / Техническая задача"
 description: "Внутренний шаблон для создателя сборки и модераторов"
 title: "[Meta]: "
 labels: ["meta"]
@@ -11,7 +11,7 @@ body:
     id: meta_info
     attributes:
       label: "Технические подробности девелоперской задачи / Details"
-      placeholder: "Перевод сборки на новую версию Minecraft 1.21.x и глобальное тестирование стабильности FPS..."
+      placeholder: "Перевод сборки на новую версию Minecraft и глобальное тестирование стабильности FPS..."
     validations:
       required: true
   - type: checkboxes
