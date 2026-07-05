@@ -1,0 +1,105 @@
+name: "🔬 Требуется детальный тест / Detailed testing required"
+description: "Для сложных проблем: фризы через время, долгий запуск, баги оптимизации в игре"
+title: "[Detailed Test]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🔬 Запрос на проведение детального тестирования Ultimate Optimization
+        Используйте эту форму, если проблему сложно описать обычным баг-репортом и требуется глубокий анализ производительности (FPS/Троттлинг/Конфиги).
+  - type: textarea
+    id: test_problem
+    attributes:
+      label: "1. В чём именно заключается сложность проблемы? / What needs deep testing?"
+      placeholder: "FPS падает со 120 до 20 кадров ровно через час игры / Начинаются сильные фризы при прогрузке чанков в Нижнем мире..."
+    validations:
+      required: true
+  - type: textarea
+    id: how_to_reproduce
+    attributes:
+      label: "2. Пошаговые действия для воспроизведения проблемы / How to reproduce"
+      placeholder: "1. Запустить сборку. 2. Зайти на сервер или в одиночный мир. 3. Включить шейдеры. 4. Летать на элитрах в течение 10 минут..."
+    validations:
+      required: true
+  - type: dropdown
+    id: test_os
+    attributes:
+      label: "3. Операционная система / Operating System"
+      options:
+        - "🪟 Windows 10 / 11"
+        - "🐧 Linux"
+        - "🍏 MacOS"
+        - "📱 PojavLauncher"
+        - "❓ Другая ОС"
+    validations:
+      required: true
+  - type: dropdown
+    id: drive_type
+    attributes:
+      label: "4. Тип накопителя, где установлен Minecraft / Storage Drive Type"
+      options:
+        - "⚡ SSD / NVMe (Быстрый современный твердотельный накопитель)"
+        - "💾 HDD (Обычный старый жесткий диск)"
+    validations:
+      required: true
+  - type: dropdown
+    id: gpu_type
+    attributes:
+      label: "5. Видеокарта на ноутбуке или ПК / GPU Type"
+      options:
+        - "🖥️ ПК: Дискретная видеокарта (NVIDIA/AMD/Intel Arc)"
+        - "🔌 ПК: Встроенная графика (Intel HD/Vega/Xeon)"
+        - "💻 Ноутбук: Две видеокарты (Переключаемая графика дискретная + встройка)"
+        - "💻 Ноутбук: Только встроенная графика"
+    validations:
+      required: true
+  - type: input
+    id: specs_info
+    attributes:
+      label: "6. Процессор, видеокарта и точные параметры ОЗУ / PC Specs & RAM details"
+      placeholder: "Xeon E5-2670 | GTX 1060 | Выделено 6 ГБ ОЗУ (Всего 16 ГБ DDR4 3200 MHz)"
+    validations:
+      required: true
+  - type: input
+    id: exact_versions
+    attributes:
+      label: "7. Точные версии ПО / Exact Versions"
+      placeholder: "Модпак: v1.0.0 | Майнкрафт: 1.21 | Java: 25.2.0.3 | Fabric Loader: 0.15.11"
+    validations:
+      required: true
+  - type: textarea
+    id: fps_measurements
+    attributes:
+      label: "8. Ваши замеры FPS и стабильности (Приблизительный тест) / Your Test FPS & Performance data"
+      placeholder: "Обычно в игре 140 FPS. В момент фриза падает до 5-10 кадров на пару секунд. По графику Alt+F3 видно резкие пики рендера..."
+    validations:
+      required: true
+  - type: textarea
+    id: hardware_status
+    attributes:
+      label: "9. Температуры, троттлинг и разгон железа / Hardware Status"
+      placeholder: "Процессор греется до 70 градусов, видеокарта до 65. Разгона нет, XMP профиль памяти стабилен..."
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots_f3
+    attributes:
+      label: "10. Скриншоты экрана отладки F3 / Alt+F3 (Опционально) / Media Upload"
+      description: "Перетащите сюда скриншоты с открытым меню F3 в игре в момент просадки FPS."
+    validations:
+      required: false
+  - type: textarea
+    id: optional_logs
+    attributes:
+      label: "11. Логи или файлы конфигурации (Опционально) / Logs or Config files"
+      description: "Если есть подозрительные строки в latest.log, перетащите файл сюда."
+    validations:
+      required: false
+  - type: checkboxes
+    id: user_agreement_detailed
+    attributes:
+      label: "⚖️ Пользовательское соглашение / User Agreement"
+      options:
+        - label: "Я подтверждаю, что это сложная техническая проблема производительности официальной сборки Ultimate Optimization, и я готов предоставить дополнительные тесты по просьбе разработчика / I agree to the terms"
+          required: true
