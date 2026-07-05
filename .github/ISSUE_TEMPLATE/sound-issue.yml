@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         ### 🎵 Отчет о проблемах со звуком в Ultimate Optimization
+        В сборку уже встроены моды на кастомный 3D звук. Заполните анкету ниже, если аудио-движок работает некорректно.
   - type: dropdown
     id: sound_device
     attributes:
@@ -15,21 +16,34 @@ body:
         - "🎧 Наушники (USB подключение или Беспроводные Bluetooth)"
         - "🔌 Наушники / Колонки (Стандартный шнур 3.5mm Jack)"
         - "🔊 Встроенные динамики монитора или ноутбука"
+        - "💳 Внешняя физическая звуковая карта (Например: Razer Blackshark V2 USB Sound Card и др.)"
     validations:
       required: true
   - type: dropdown
-    id: tg_3d_audio
+    id: virtual_surround_software
     attributes:
-      label: "2. Используете ли вы моды на объемный 3D звук? / 3D Physics Audio Check"
+      label: "2. Используете ли вы виртуальный объемный звук 7.1 или сторонний софт? / 7.1 Virtual Surround & Software"
       options:
-        - "❌ Нет, только стандартный звук Майнкрафта"
-        - "🔊 Да, включен кастомный мод на физику звука / эхо в пещерах"
+        - "❌ Нет, использую только чистый стандартный стерео-звук"
+        - "🪟 Включен стандартный Windows Sonic (Пространственный звук Windows)"
+        - "🐍 Использую Razer Surround / THX Spatial Audio / Razer Synapse 3 или 4"
+        - "🔊 Включен встроенный виртуальный 7.1 звук в драйверах наушников"
+        - "❓ Другой аудио-софт для улучшения звука"
+    validations:
+      required: true
+  - type: dropdown
+    id: built_in_3d_check
+    attributes:
+      label: "3. Включен ли встроенный 3D звук в настройках модов сборки? / Modpack 3D Audio Check"
+      options:
+        - "🟢 Да, использую встроенные 3D звуки сборки Ultimate Optimization"
+        - "❌ Нет, я вручную отключил моды на физику звука в настройках игры"
     validations:
       required: true
   - type: dropdown
     id: sound_os
     attributes:
-      label: "3. Операционная система / Operating System"
+      label: "4. Операционная система / Operating System"
       options:
         - "🪟 Windows 10 / 11"
         - "🐧 Linux"
@@ -41,15 +55,15 @@ body:
   - type: textarea
     id: sound_description
     attributes:
-      label: "4. Подробное описание проблемы со звуком / Description"
-      placeholder: "Звук полностью пропадает через 10 минут игры / При взрыве ТНТ игра виснет из-за аудио-движка..."
+      label: "5. Подробное описание проблемы со звуком / Description"
+      placeholder: "Звук хрипит при взрывах / встроенный 3D звук конфликтует с THX Spatial Audio и игра зависает..."
     validations:
       required: true
   - type: textarea
     id: sound_specs
     attributes:
-      label: "5. Приблизительный тест FPS в момент бага и ваши комплектующие (видюха, ссд и т.д.) / Your Specs & FPS"
-      placeholder: "Укажите вашу видеокарту, процессор и тип диска (SSD/HDD)..."
+      label: "6. Приблизительный тест FPS в момент бага и ваши комплектующие (видюха, ссд и т.д.) / Your Specs & FPS"
+      placeholder: "Укажите вашу видеокарту, процессор, модель наушников и тип диска (SSD/HDD)..."
     validations:
       required: true
   - type: checkboxes
@@ -57,5 +71,5 @@ body:
     attributes:
       label: "⚖️ Пользовательское соглашение / User Agreement"
       options:
-        - label: "Я проверил, что драйверы звуковой карты обновлены, а в системе правильно выбрано устройство вывода звука / I agree to the terms"
+        - label: "Я проверил, что драйверы звуковой карты и софт Razer/THX обновлены, а в системе правильно выбрано устройство вывода / I agree to the terms"
           required: true
