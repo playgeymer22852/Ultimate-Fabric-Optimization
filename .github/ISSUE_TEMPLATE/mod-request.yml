@@ -1,0 +1,30 @@
+name: "Mod request"
+description: "Suggest a new mod to be added or replaced in Ultimate Optimization"
+title: "[Mod Request]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ➕ Suggest a mod for Ultimate Optimization
+  - type: input
+    id: mod_name
+    attributes:
+      label: "Mod Name"
+      placeholder: "e.g. Sodium, Lithium..."
+    validations:
+      required: true
+  - type: input
+    id: mod_link
+    attributes:
+      label: "Mod Link"
+      placeholder: "https://modrinth.com/mod/..."
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: "Why should it be in the modpack?"
+      placeholder: "This mod improves performance by..."
+    validations:
+      required: true
