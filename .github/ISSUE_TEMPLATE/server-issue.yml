@@ -1,0 +1,81 @@
+name: "🌐 Проблема с сервером / Server Issue"
+description: "Если сборка лагает, вылетает или некорректно работает именно при игре на сервере"
+title: "[Server Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌐 Отчет о проблемах на сервере с Ultimate Optimization
+        Моды на оптимизацию чанков и пакетов часто ведут себя в мультиплеере иначе. Пожалуйста, заполните технические данные сервера ниже.
+  - type: dropdown
+    id: server_type
+    attributes:
+      label: "1. Тип сервера / Server Type"
+      options:
+        - "🌍 Публичный сервер (Большой проект из интернета)"
+        - "🔒 Приватный сервер / Локальная игра с друзьями (Aternos, LAN, свой хостинг)"
+    validations:
+      required: true
+  - type: input
+    id: server_ip
+    attributes:
+      label: "2. IP-адрес сервера (Опционально) / Server IP"
+      description: "Если сервер приватный, IP-адрес вписывать НЕ НАДО! Если публичный — укажите его для тестов."
+      placeholder: "e.g. mc.server.ru / Не требуется для приватного..."
+    validations:
+      required: false
+  - type: input
+    id: server_core
+    attributes:
+      label: "3. Ядро сервера (Если известно) / Server Software"
+      placeholder: "Например: Fabric Server, Paper, Purpur, Velocity / Не знаю..."
+    validations:
+      required: true
+  - type: input
+    id: user_ping
+    attributes:
+      label: "4. Ваш средний пинг на сервере / Your Ping"
+      placeholder: "e.g. 45 ms, 120 ms (Помогает отличить сетевые лаги от лагов видеокарты)"
+    validations:
+      required: true
+  - type: dropdown
+    id: server_os
+    attributes:
+      label: "5. Операционная система / Operating System"
+      options:
+        - "🪟 Windows 10 / 11"
+        - "🐧 Linux"
+        - "🍏 MacOS"
+        - "📱 PojavLauncher"
+        - "❓ Другая ОС"
+    validations:
+      required: true
+  - type: textarea
+    id: server_bug_description
+    attributes:
+      label: "6. Подробное описание проблемы на сервере / Description"
+      placeholder: "При заходе на сервер пропадают чанки / кикает с ошибкой / падает FPS при скоплении людей..."
+    validations:
+      required: true
+  - type: textarea
+    id: server_specs_fps
+    attributes:
+      label: "7. Ваши комплектующие и замеры FPS на сервере / Your Specs & Server FPS"
+      placeholder: "Видеокарта, процессор, тип диска (SSD/HDD) и сколько кадров выдает игра на сервере..."
+    validations:
+      required: true
+  - type: textarea
+    id: server_logs
+    attributes:
+      label: "8. Логи ошибки или скриншот (Опционально) / Logs or Media"
+      description: "Если вас кикает, прикрепите лог latest.log или скриншот ошибки отключения."
+    validations:
+      required: false
+  - type: checkboxes
+    id: user_agreement_server
+    attributes:
+      label: "⚖️ Пользовательское соглашение / User Agreement"
+      options:
+        - label: "Я подтверждаю, что лагает или вылетает именно сборка Ultimate Optimization, а не сам сервер из-за слабого бесплатного хостинга или лагов интернета / I agree to the terms"
+          required: true
