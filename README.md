@@ -1,4 +1,4 @@
-# Ultimate Optimization ![Boost](https://shields.io)
+# ⚡ Ultimate Optimization
 
 **Ultimate Optimization** — это ультимативная и высокотехнологичная сборка модов для Minecraft, созданная с одной главной целью: выжать абсолютный максимум производительности (FPS), устранить микрофризы и обеспечить идеальную плавность геймплея. 
 
@@ -6,20 +6,10 @@
 
 ---
 
-<p align="center">
-  <a href="https://modrinth.com">
-    <img src="https://shields.io" alt="Modrinth">
-  </a>
-  <a href="https://fabricmc.net">
-    <img src="https://shields.io" alt="Fabric">
-  </a>
-  <a href="https://openjdk.org">
-    <img src="https://shields.io" alt="Java 25">
-  </a>
-  <a href="#-как-сообщить-о-баге-инструкция">
-    <img src="https://shields.io" alt="Issues">
-  </a>
-</p>
+### 🔗 Важные ссылки проекта / Быстрый переход:
+* 🟢 **[СКАЧАТЬ СБОРКУ НА MODRINTH](https://modrinth.com)** — официальная страница проекта, загрузка пакета модов и проверка свежих обновлений.
+* 🛠️ **[ЗАПУСТИТЬ НАШ БАГ-ТРЕКЕР](https://github.com)** — ручной переход во вкладку Issues для создания технических отчётов.
+* ☕ **[ИГРОВОЙ ДВИЖОК: FABRIC](https://fabricmc.net)** — официальный сайт загрузчика модов, на котором работает сборка.
 
 ---
 
