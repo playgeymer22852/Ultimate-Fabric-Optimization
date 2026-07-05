@@ -18,14 +18,6 @@ body:
     id: remove_reason
     attributes:
       label: "Почему его нужно убрать? / Why should it be removed?"
-      description: "Мод вызывает баги, крашит игру или сильно снижает производительность (FPS)?"
       placeholder: "Этот мод конфликтует с новой версией Java и вызывает микрофризы каждые 5 секунд..."
-    validations:
-      required: true
-  - type: input
-    id: user_specs_removal
-    attributes:
-      label: "Технические характеристики вашего ПК / Your PC Specs"
-      placeholder: "e.g. Intel Core i3 / 8 GB RAM / Видеокарта GTX 1050"
     validations:
       required: true
