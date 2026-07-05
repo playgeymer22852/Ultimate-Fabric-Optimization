@@ -11,7 +11,7 @@ body:
     id: mod_name
     attributes:
       label: "1. Название мода / Mod Name"
-      placeholder: "Например: Lithium, Sodium, Bobby, ImmediatelyFast..."
+      placeholder: "Например: Lithium, Sodium, Bobby..."
     validations:
       required: true
   - type: input
@@ -29,12 +29,31 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: request_os
+    attributes:
+      label: "4. Операционная система / Operating System"
+      options:
+        - "🪟 Windows 10 / 11"
+        - "🐧 Linux"
+        - "🍏 MacOS"
+        - "📱 PojavLauncher"
+        - "❓ Другая ОС"
+    validations:
+      required: true
+  - type: dropdown
     id: test_drive
     attributes:
-      label: "4. На каком накопителе вы тестировали этот мод? / Storage Drive used for testing"
+      label: "5. На каком накопителе вы тестировали этот мод? / Storage Drive used for testing"
       options:
         - "⚡ SSD / NVMe (Быстрый современный твердотельный накопитель)"
         - "💾 HDD (Обычный старый жесткий диск)"
+    validations:
+      required: true
+  - type: textarea
+    id: request_specs_fps
+    attributes:
+      label: "6. Приблизительный FPS с новым модом, ваши тесты и комплектующие вашего ПК / Your Specs & Test FPS"
+      placeholder: "Укажите параметры вашего ПК (Видеокарта, Процессор, SSD/HDD, RAM) и сколько кадров выдает игра после установки этого мода..."
     validations:
       required: true
   - type: checkboxes
@@ -42,5 +61,5 @@ body:
     attributes:
       label: "⚖️ Пользовательское соглашение / User Agreement"
       options:
-        - label: "Я подтверждаю, что предлагаю мод строго для оптимизации, повышения FPS или исправления багов Ultimate Optimization, а не тяжелые контентные моды. Я согласен на закрытие темы при нарушении правил / I agree to the terms"
+        - label: "Я подтверждаю, что предлагаю мод строго для оптимизации, повышения FPS или исправления багов Ultimate Optimization, а не тяжелые контентные моды / I agree to the terms"
           required: true
