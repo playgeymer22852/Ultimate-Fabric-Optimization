@@ -17,6 +17,10 @@ body:
           required: true
         - label: "Я скачал сборку строго с официальной страницы Modrinth (нет вирусов) / Official Modrinth download"
           required: true
+        - label: "Я НЕ менял содержимое сборки, НЕ добавлял свои моды и НЕ обновлял моды вручную / No custom mods or manual updates"
+          required: true
+        - label: "Я пробовал полностью переустановить сборку с чисткой папки .minecraft перед отправкой отчёта / I tried clean reinstall"
+          required: true
         - label: "Я обновил драйверы видеокарты (NVIDIA/AMD/Intel) и процессора (в т.ч. Xeon) / Drivers updated"
           required: true
         - label: "Мой ПК/Ноутбук не перегревается и работает без нестабильного разгона железа (ОЗУ/ЦП) / No overheating or unstable overclock"
@@ -32,6 +36,7 @@ body:
         - "🐧 Linux (Ubuntu, Debian, Arch, Mint...)"
         - "🍏 MacOS (Apple Mac / MacBook)"
         - "📱 Телефон или Планшет (Запуск через PojavLauncher)"
+        - "❓ Другая ОС / Other OS"
     validations:
       required: true
   - type: dropdown
@@ -40,7 +45,7 @@ body:
       label: "2. Графический интерфейс рендера / Graphics API"
       options:
         - "🎮 Стандартный OpenGL (Майнкрафт по умолчанию)"
-        - "⚡ Vulkan API (Если используете сторонние моды вроде VulkanMod)"
+        - "⚡ Vulkan API"
     validations:
       required: true
   - type: dropdown
@@ -66,22 +71,23 @@ body:
   - type: dropdown
     id: lag_type
     attributes:
-      label: "5. Характер лагов (Если падает FPS) / Type of performance issue"
+      label: "5. Характер лагов (Опционально) / Type of performance issue"
       options:
         - "📉 Постоянно низкий FPS (Constant low FPS)"
         - "🛑 Фризы и заикания каждые пару секунд (Stutters / Spikes)"
         - "⏳ Долгая загрузка мира или чанков (Slow chunk loading)"
         - "Не относится к FPS (Not a performance issue)"
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: gpu_type
     attributes:
-      label: "6. Тип используемой видеокарты / GPU Type"
+      label: "6. Видеокарта на ноутбуке или ПК / GPU Type"
       options:
-        - "🖥️ Дискретная видеокарта (Вставлена в ПК: NVIDIA GeForce / AMD Radeon / Intel Arc)"
-        - "🔌 Встроенная графика (Внутри процессора: Intel HD / AMD Vega / Встройка Xeon)"
-        - "💻 Две видеокарты на ноутбуке (Переключаемая графика дискретная + встройка)"
+        - "🖥️ ПК: Дискретная видеокарта (NVIDIA GeForce / AMD Radeon / Intel Arc)"
+        - "🔌 ПК: Встроенная графика (Intel HD / AMD Vega / Встройка Xeon)"
+        - "💻 Ноутбук: Две видеокарты (Переключаемая графика дискретная + встройка)"
+        - "💻 Ноутбук: Только встроенная графика"
     validations:
       required: true
   - type: dropdown
@@ -177,14 +183,14 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: "19. Логи ошибки (latest.log или краш-репорт) / Logs & Crash Report"
-      description: "Перетащите файл лога прямо сюда. Без логов мы закроем задачу!"
+      label: "19. Логи ошибки (Опционально) / Logs & Crash Report"
+      description: "Если игра полностью вылетает, пожалуйста, перетащите файл latest.log или краш-репорт сюда."
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: user_agreement_bug
     attributes:
       label: "⚖️ Пользовательское соглашение / User Agreement"
       options:
-        - label: "Я согласен, что если я вручную менял моды, обновлял их, не почистил кэш лаунчера или не прикрепил логи — разработчик Ultimate Optimization имеет полное право закрыть и удалить мой отчёт без рассмотрения / I agree to the terms"
+        - label: "Я согласен, что если я вручную менял или обновлял файлы модов, не почистил кэш лаунчера — разработчик Ultimate Optimization имеет полное право закрыть мой отчёт без рассмотрения / I agree to the terms"
           required: true
