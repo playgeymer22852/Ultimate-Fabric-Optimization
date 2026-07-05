@@ -1,0 +1,95 @@
+name: "🌍 Проблема с миром или генерацией / World & Generation Bug"
+description: "Если ломаются текстуры блоков, пропадают чанки или игра фризит в конкретных биомах"
+title: "[World Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌍 Отчет о багах рендера мира и генерации в Ultimate Optimization
+        Для проверки графических багов Sodium/Lithium нам критически важно знать точное местоположение ошибки в мире.
+  - type: input
+    id: world_seed
+    attributes:
+      label: "1. Сид мира (Узнать в игре командой /seed) / World Seed"
+      placeholder: "e.g. -459812739481273981"
+    validations:
+      required: true
+  - type: input
+    id: world_coords
+    attributes:
+      label: "2. Точные координаты балома или блока / Exact Coordinates (X, Y, Z)"
+      placeholder: "Например: X: 124, Y: 64, Z: -850 (Можно скопировать через F3+C)"
+    validations:
+      required: true
+  - type: dropdown
+    id: dimension_type
+    attributes:
+      label: "3. Измерение, где произошел баг / Dimension"
+      options:
+        - "🌳 Обычный мир (Overworld)"
+        - "🔥 Нижний мир (Nether)"
+        - "🔮 Энд мир (The End)"
+        - "🌀 Стороннее измерение из модов"
+    validations:
+      required: true
+  - type: dropdown
+    id: world_os
+    attributes:
+      label: "4. Операционная система / Operating System"
+      options:
+        - "🪟 Windows 10 / 11"
+        - "🐧 Linux"
+        - "🍏 MacOS"
+        - "📱 PojavLauncher"
+        - "❓ Другая ОС"
+    validations:
+      required: true
+  - type: dropdown
+    id: world_drive
+    attributes:
+      label: "5. Тип накопителя (Критично для генерации чанков) / Storage Drive Type"
+      options:
+        - "⚡ SSD / NVMe (Быстрый современный диск)"
+        - "💾 HDD (Старый жесткий диск — часто вызывает фризы чанков)"
+    validations:
+      required: true
+  - type: dropdown
+    id: world_gpu
+    attributes:
+      label: "6. Видеокарта на ноутбуке или ПК / GPU Type"
+      options:
+        - "🖥️ ПК: Дискретная видеокарта"
+        - "🔌 ПК: Встроенная графика"
+        - "💻 Ноутбук: Две видеокарты"
+        - "💻 Ноутбук: Только встроенная графика"
+    validations:
+      required: true
+  - type: textarea
+    id: world_description
+    attributes:
+      label: "7. Подробное описание бага генерации / Description"
+      placeholder: "Чанки не грузятся дальше 4 блоков при полете / Текстуры лавы мигают синим цветом..."
+    validations:
+      required: true
+  - type: textarea
+    id: world_specs_fps
+    attributes:
+      label: "8. Приблизительный тест FPS в этой зоне и ваши комплектующие / Your Specs & Location FPS"
+      placeholder: "Укажите процессор/видюху и сколько кадров выдает игра конкретно в этом сломанном месте..."
+    validations:
+      required: true
+  - type: textarea
+    id: world_screenshots
+    attributes:
+      label: "9. Обязательный скриншот графического бага (F2) / Media Upload"
+      description: "Пожалуйста, перетащите сюда скриншот поломки чанков или текстур блоков. Без картинок баги рендера не принимаются!"
+    validations:
+      required: true
+  - type: checkboxes
+    id: user_agreement_world
+    attributes:
+      label: "⚖️ Пользовательское соглашение / User Agreement"
+      options:
+        - label: "Я подтверждаю, что указал верный сид и координаты, и баг стабильно повторяется в этом месте на чистой официальной сборке / I agree to the terms"
+          required: true
