@@ -1,0 +1,12 @@
+name: "Setting change"
+description: "Suggest an option/config/keybind/etc change in an existing mod or tool."
+title: "[Setting Change]: "
+labels: ["config"]
+body:
+  - type: textarea
+    id: change_info
+    attributes:
+      label: "What configuration or setting should be changed?"
+      placeholder: "Change smooth lighting settings by default because..."
+    validations:
+      required: true
